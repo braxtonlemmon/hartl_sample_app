@@ -7,6 +7,7 @@ ruby '2.6.3'
 gem 'rails', '~> 5.2.3'
 # Use sqlite3 as the database for Active Record
 
+gem 'bcrypt'
 # bootstrap
 gem 'bootstrap-sass'
 
@@ -39,6 +40,7 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+
 group :development, :test do
   gem 'sqlite3'
 	# Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -60,7 +62,7 @@ group :test do
 	gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
-  gem 'chromedriver-helper'
+  #gem 'chromedriver-helper'
 	gem 'minitest'
 	gem 'minitest-reporters'
 	gem 'guard'
