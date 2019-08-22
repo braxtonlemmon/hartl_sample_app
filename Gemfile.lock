@@ -79,6 +79,8 @@ GEM
     crass (1.0.4)
     erubi (1.8.0)
     execjs (2.7.0)
+    faker (2.1.2)
+      i18n (>= 0.8)
     ffi (1.11.1)
     formatador (0.2.5)
     globalid (0.4.2)
@@ -234,12 +236,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bcrypt
+  bcrypt (~> 3.1.13)
   bootsnap (>= 1.1.0)
-  bootstrap-sass
+  bootstrap-sass (~> 3.4.1)
   byebug
   capybara (>= 2.15)
   coffee-rails (~> 4.2)
+  faker (~> 2.1.2)
   guard
   guard-minitest
   jbuilder (~> 2.5)
