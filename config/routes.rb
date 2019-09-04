@@ -21,5 +21,8 @@ Rails.application.routes.draw do
 	# Password resets 
 	resources :password_resets, only: [:new, :create, :edit, :update]
 	get 'password_resets/new'
-  get 'password_resets/edit'
+	get 'password_resets/edit'
+	
+	# Microposts
+	resources :microposts, only: [:create, :destroy]
 end
