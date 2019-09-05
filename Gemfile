@@ -13,6 +13,9 @@ gem 'faker', '~> 2.1.2'
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'will_paginate', '~> 3.1.8'
 gem 'bootstrap-will_paginate', '~> 1.0.0 '
+gem 'carrierwave', '~> 2.0.1'
+gem 'mini_magick', '~> 4.9.5'
+
 
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
@@ -74,7 +77,8 @@ group :test do
 end
 
 group :production do
-	gem 'pg'
+	gem 'pg', '~> 1.1.4'
+	gem 'fog', '~> 2.2.0'
 end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

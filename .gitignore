@@ -35,3 +35,6 @@
 
 # Ignore workspace file
 /workspace.code-workspace
+
+# Ignore uploaded test images.
+/public/uploads
