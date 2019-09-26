@@ -6,7 +6,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
 	end
 
 	test "should get root" do
-		get roots_path
+		get root_path
 		assert_response :success
 	end
 
